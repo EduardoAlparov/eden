@@ -1,0 +1,133 @@
+.page-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    flex: 0 0 auto;
+    padding: 8rem 0 3.4rem;
+
+    color: var(--1-color, #262626);
+    background-color: var(--back, #EDEBE0);
+
+    &__row {
+        display: grid;
+        grid-template-columns: min-content 1fr;
+
+        @include breakpoint(laptop) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        &.page-footer__row--main {
+            padding-bottom: 3.6rem;
+
+            @include breakpoint(tablet) {
+                padding-bottom: 2rem;
+            }
+        }
+
+        &.page-footer__row--bottom {
+            padding-top: 3rem;
+
+            border-top: 1px solid var(--5-color, #504C4C);
+
+            @include breakpoint(laptop) {
+                gap: unset;
+            }
+        }
+    }
+
+    &__col {
+
+        &--small,
+        &--big {
+            @include breakpoint(tablet) {
+                width: 100%;
+            }
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 6rem;
+
+        @include breakpoint(tablet) {
+            margin-bottom: 4rem;
+        }
+
+        .icon {
+            width: 27rem;
+            height: 7.8rem;
+        }
+    }
+
+    &__socials {
+        margin-top: auto;
+    }
+
+    &__menus {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-end;
+        gap: 12rem;
+
+        margin-right: 2.4rem;
+
+        @include breakpoint(desktop) {
+            gap: 4rem;
+
+            margin-right: unset;
+        }
+
+        @include breakpoint(tablet) {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 2rem;
+        }
+    }
+
+    &__menu {
+        min-width: 15.4rem;
+    }
+
+    &__langs {
+        display: flex;
+        align-items: stretch;
+        gap: 1.4rem;
+        margin-bottom: 1.6rem;
+
+        @include breakpoint(small-tablet) {
+            flex-direction: column;
+            gap: 2rem;
+
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__divider {
+        width: 0.5px;
+        background: #5C5C5C;
+
+        @include breakpoint(small-tablet) {
+            display: none;
+        }
+    }
+
+    &__copyright {
+        p {
+            color: var(--5-color, #504C4C);
+            font-size: 1.2rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 120%;
+            text-transform: uppercase;
+            white-space: nowrap;
+
+            &:not(:last-child) {
+                margin-bottom: 0.7rem;
+            }
+        }
+    }
+}

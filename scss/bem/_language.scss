@@ -1,0 +1,37 @@
+.language {
+    &__button {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        height: 1.6rem;
+        padding: 0.4rem 1rem;
+        border-radius: 0.2rem;
+        border: 0.5px solid #424242;
+
+        color: #424242;
+        font-size: 0.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        &>span {
+            display: block;
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        &>i {
+            display: block;
+            width: 0.4rem;
+            height: 0.7rem;
+            flex-shrink: 0;
+
+            background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%225%22%20height%3D%223%22%20viewBox%3D%220%200%205%203%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M4.58715%200.722224L4.91406%201.04944L3.13241%202.83171C3.10386%202.86044%203.06992%202.88324%203.03252%202.8988C2.99513%202.91435%202.95503%202.92236%202.91453%202.92236C2.87402%202.92236%202.83392%202.91435%202.79653%202.8988C2.75913%202.88324%202.72519%202.86044%202.69664%202.83171L0.914062%201.04944L1.24097%200.722533L2.91406%202.39532L4.58715%200.722224Z%22%20fill%3D%22%235C5C5C%22%2F%3E%0A%3C%2Fsvg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

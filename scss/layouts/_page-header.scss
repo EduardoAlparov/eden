@@ -1,0 +1,52 @@
+.page-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 200;
+
+    // flex: 0 0 max-content;
+    width: 100%;
+    max-width: 100%;
+    padding: 5rem 0 0;
+
+    border-bottom: 1px solid var(--3-color, #C6B081);
+
+    &__site-container {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2.6rem;
+    }
+
+    &__logo {
+        margin-inline: auto;
+    }
+
+    &__burger {
+        display: none;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+        padding-bottom: 2rem;
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: center;
+
+        flex: 1 1 auto;
+    }
+
+    &__search,
+    &__controls {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        width: max-content;
+    }
+}

@@ -1,0 +1,32 @@
+.button {
+    position: relative;
+
+    display: grid;
+    place-content: center;
+    place-items: center;
+
+    height: 5rem;
+    padding: 0 7rem;
+    color: var(--3, #C6B081);
+    text-align: center;
+
+    @extend .text-button;
+
+    span {
+        padding: 1rem;
+        @extend .text-button;
+    }
+
+    .icon {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+
+        fill: transparent;
+        stroke-width: 1px;
+        stroke: var(--3, #C6B081);
+    }
+
+    @include hover {}
+}

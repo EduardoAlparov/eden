@@ -1,0 +1,26 @@
+html {
+    font-size: 8px;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+
+    @include breakpointMF(small-mobile) {
+        font-size: 10px;
+    }
+
+    @include breakpointMF(large-desktop) {
+        font-size: 10px;
+        font-size: unquote("clamp(4.3px, 0.59vw, 25px)");
+    }
+
+    @include noHighlight();
+}
+
+body {
+    position: relative;
+    min-width: 319px;
+    color: var(--text, #333);
+    text-rendering: optimizeSpeed;
+    scroll-behavior: smooth;
+
+    @include font(1.6rem, 1.25, 400);
+}

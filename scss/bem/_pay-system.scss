@@ -1,0 +1,18 @@
+.pay-system {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    li {
+        flex-shrink: 0;
+    }
+
+    &__tab {
+        display: block;
+
+        .icon {
+            width: 2.5rem;
+            height: 1.6rem;
+        }
+    }
+}

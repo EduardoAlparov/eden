@@ -1,0 +1,12 @@
+.search {
+    &>.icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    &>span {
+        color: var(--3-color, #C6B081);
+        text-align: center;
+        @extend .text-1;
+    }
+}

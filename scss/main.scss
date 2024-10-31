@@ -1,0 +1,37 @@
+// RESETS:
+@import 'content/reset';
+// @import 'content/normalize';
+
+// FONTS:
+@import 'content/fonts';
+
+// MIXINS:
+@import 'utils/mixins';
+
+
+// SETTINGS:
+@import 'settings/vars';
+@import 'settings/global';
+@import 'settings/utils';
+
+// LAYOUTS:
+@import 'layouts/layout';
+@import 'layouts/modal';
+@import 'layouts/page-header';
+@import 'layouts/page-footer';
+// @import 'layouts/grid';
+
+
+//UI:
+@import 'ui/button';
+@import 'ui/search';
+@import 'ui/cart';
+
+//BEM:
+@import 'bem/logo';
+@import 'bem/menu';
+@import 'bem/hero';
+@import 'bem/socials';
+@import 'bem/language';
+@import 'bem/pay-system';
+@import 'bem/footer-menu';
