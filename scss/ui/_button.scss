@@ -28,5 +28,11 @@
         stroke: var(--3, #C6B081);
     }
 
+    &.button--black {
+        span {
+            color: var(--1-color, #262626);
+        }
+    }
+
     @include hover {}
 }

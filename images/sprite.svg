@@ -65,8 +65,8 @@
         <path d="M0.554199 9.49771L9.62346 0.695312H328.485L337.554 9.49771V40.8929L328.485 49.6953H9.62346L0.554199 40.8929V9.49771Z" stroke="#C6B081"/>
     </symbol>
 
-    <symbol xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 339 51" fill="none">
-        <path d="M0.554199 9.49771L9.62346 0.695312H328.485L337.554 9.49771V40.8929L328.485 49.6953H9.62346L0.554199 40.8929V9.49771Z" stroke="#C6B081"/>
+    <symbol id="border-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 339 51" fill="none">
+        <path d="M0.554199 10.1047L12.0418 1.26758H326.067L337.554 10.1047V41.4305L326.067 50.2676H12.0418L0.554199 41.4305V10.1047Z" stroke="#262626"/>
     </symbol>
 
     <symbol id="pay-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 16" fill="none">

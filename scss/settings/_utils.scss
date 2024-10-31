@@ -96,6 +96,20 @@ textarea:required:valid {
     text-transform: uppercase;
 }
 
+.text-h2 {
+    font-family: var(--second-ff);
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108%;
+    text-transform: uppercase;
+
+    @include breakpoint(portrait-tablet) {
+        font-size: 6rem;
+        line-height: 96%;
+    }
+}
+
 .text-button {
     font-size: 1.5rem;
     font-style: normal;

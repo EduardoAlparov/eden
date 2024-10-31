@@ -206,6 +206,12 @@
         }
     }
 
+    @else if $class ==portrait-tablet {
+        @media only screen and (max-width: (992px)) {
+            @content;
+        }
+    }
+
     @else if $class ==small-tablet {
         @media only screen and (max-width: (768px)) {
             @content;
