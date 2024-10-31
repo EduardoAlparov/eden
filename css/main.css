@@ -895,7 +895,7 @@ textarea:required:valid {
   left: 0;
   width: 100%;
   aspect-ratio: 2.3/1;
-  background-image: url("../../images/hero-vector.svg");
+  background-image: url("./../images/hero-vector.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1198,7 +1198,7 @@ textarea:required:valid {
           transform: translateX(-50%);
   width: 100%;
   aspect-ratio: 2.3/1;
-  background-image: url("../../images/questions-vector.svg");
+  background-image: url("./../images/questions-vector.svg");
   content: "";
   pointer-events: none;
 }
