@@ -7,7 +7,7 @@
     --accent: orange;
     --title: #111;
     --text: #333;
-    --back: #EDEBE0;
+    --back: #EDEBE0; // var(--back, #EDEBE0);
     --white: #fff;
     --black: #000;
 
