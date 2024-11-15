@@ -1,0 +1,51 @@
+.ready {
+    padding-block: 14rem;
+
+    background-color: var(--back, #EDEBE0);
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        @include breakpoint(laptop) {
+            margin-bottom: 6rem;
+        }
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        &>p {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__link {
+        max-width: 26.8rem;
+        margin-top: 7rem;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    &__item {
+        flex: 0 1 calc(100% / 4 - (2rem * 3 / 4));
+
+        @include breakpoint(laptop) {
+            flex: 0 1 calc(100% / 2 - (2rem / 2));
+        }
+
+        @include breakpoint(mobile) {
+            flex: 0 1 calc(100%);
+        }
+    }
+}

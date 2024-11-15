@@ -1,0 +1,133 @@
+.catalog {
+    display: grid;
+    grid-template-areas: "c_head c_head"
+        "c_sidebar c_list"
+        "c_pagination c_pagination";
+    gap: 2rem;
+    grid-template-columns: 1fr calc(100% - 35.5rem);
+
+    @include breakpoint(laptop) {
+        grid-template-areas: "c_head"
+            "c_list"
+            "c_pagination";
+        grid-template-columns: 100%;
+        grid-auto-flow: column;
+    }
+
+    &__head {
+        grid-area: c_head;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    &__sidebar {
+        grid-area: c_sidebar;
+
+        &.filters {
+            @include breakpoint(laptop) {
+                display: none;
+            }
+        }
+    }
+
+    &__list {
+        grid-area: c_list;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6rem 2rem;
+
+        padding-right: var(--content-padding);
+
+        @include breakpoint(laptop) {
+            gap: 4rem 2rem;
+            padding-inline: var(--content-padding);
+        }
+    }
+
+    &__row {
+        border-bottom: 1px solid var(--6-color, #D0CDBE);
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+
+        padding-bottom: 4rem;
+    }
+
+    &__nav-item {
+        flex: 0 1 20rem;
+
+        @include breakpoint(laptop) {
+            flex: 1 1 calc(100% / 2 - (2rem / 2));
+        }
+    }
+
+    &__nav-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 6rem;
+        padding: 2rem 4rem;
+
+        color: var(--1-color, #262626);
+        text-align: center;
+
+        background-color: var(--6-color, #D0CDBE);
+        cursor: pointer;
+
+        @extend .text-1;
+
+        @include breakpoint(laptop) {
+            padding: 2rem;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+
+        padding-block: 2rem;
+    }
+
+    &__controls-btn {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        @extend .text-1;
+
+        .icon {
+            width: 0.6rem;
+            height: 2rem;
+
+            fill: var(--1-color, #262626);
+        }
+    }
+
+    &__item {
+        flex: 0 1 calc(100% / 3 - (2rem * 2 / 3));
+
+        @include breakpoint(laptop) {
+            flex: 0 1 calc(100% / 2 - (2rem / 2));
+        }
+    }
+
+    &__pagination {
+        grid-area: c_pagination;
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+
+        @include breakpoint(laptop) {
+            margin-top: 6rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+body {
+    &:has(.animated-trigger) {
+        @extend .disable-scroll;
+    }
+}
+
+.animated-trigger {
+
+    .page-header--animated {
+        opacity: 0;
+    }
+
+    .fixed-header--animated {
+        opacity: 0;
+    }
+
+    .hero__back--animated {
+        &::before {
+            opacity: 1;
+        }
+    }
+
+    .hero__inner--animated {
+        transform: translateY(5%);
+        opacity: 0;
+    }
+
+    .hero__scrolling-element--animated {
+        &::before {
+            opacity: 0;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.swiper-slide {
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.lazyload,
+.lazyloading {
+    opacity: 0;
+}
+
+.lazyloaded {
+    opacity: 1;
+    transition: opacity 300ms;
+}
+
+.visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    white-space: nowrap;
+    border: 0;
+    -webkit-clip-path: inset(100%);
+    clip-path: inset(100%);
+}
+
+._accent-color {
+    color: var(--accent);
+}
+
+._uppercase {
+    text-transform: uppercase;
+}
+
+._white-color {
+    color: var(--white);
+}
+
+input::placeholder {
+    color: #666;
+    font-size: 80%;
+}
+
+::selection {
+    background-color: var(--3-color, #C6B081);
+    color: #fff;
+}
+
+/* input validation behavior */
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+    border-color: red;
+}
+
+input:required:valid,
+textarea:required:valid {
+    border-color: green;
+}
+
+[class].display-none {
+    display: none !important;
+}
+
+.disable-scroll {
+    overflow-y: hidden;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.text-1 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.text-2 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.text-h1 {
+    font-family: var(--second-ff);
+    font-size: 8.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 96%;
+    text-transform: uppercase;
+
+    @include breakpoint(portrait-tablet) {
+        font-size: 6rem;
+        line-height: 96%;
+    }
+}
+
+.text-h2 {
+    font-family: var(--second-ff);
+    font-size: 9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108%;
+    text-transform: uppercase;
+
+    @include breakpoint(portrait-tablet) {
+        font-size: 6rem;
+        line-height: 96%;
+    }
+}
+
+.text-h3 {
+    font-family: var(--second-ff);
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 108%;
+    text-transform: uppercase;
+
+    @include breakpoint(portrait-tablet) {
+        font-size: 2.5rem;
+        line-height: 108%;
+    }
+}
+
+.text-button {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.text-big {
+    font-family: var(--second-ff);
+    font-size: 14rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 96%;
+    text-transform: uppercase;
+
+    @include breakpoint(laptop) {
+        font-size: 6rem;
+    }
+}

@@ -1,0 +1,22 @@
+.search {
+    &>.icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: var(--3-color, #C6B081);
+
+        @include breakpoint(laptop) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+
+    &>span {
+        color: var(--3-color, #C6B081);
+        text-align: center;
+        @extend .text-1;
+
+        @include breakpoint(laptop) {
+            display: none;
+        }
+    }
+}

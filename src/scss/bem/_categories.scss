@@ -1,0 +1,126 @@
+.categories {
+
+    &__heading {
+        &.styles__heading {
+            margin-bottom: 7rem;
+            padding-top: 10rem;
+
+            @include breakpoint(portrait-tablet) {
+                margin-bottom: 4rem;
+                padding-top: 8rem;
+            }
+
+            @include breakpoint(portrait-tablet) {
+                margin-bottom: 4rem;
+            }
+
+            &::before,
+            &::after {
+                content: none;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        @include breakpoint(portrait-tablet) {
+            gap: 4rem;
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__item {
+        flex: 0 1 calc(100% / 3 - (2rem * 2 / 3));
+
+        @include breakpoint(portrait-tablet) {
+            flex: 1 1 100%;
+        }
+    }
+
+    &__link-top {
+        padding-bottom: 1rem;
+
+        border-bottom: 1px solid var(--1-color, #262626);
+
+        @include breakpoint(portrait-tablet) {
+            padding-bottom: unset;
+            border-bottom: none;
+        }
+    }
+
+    &__text {
+        position: relative;
+        padding-right: 50px;
+
+        color: var(--5-color, #504C4C);
+        @extend .text-1;
+
+        &::after {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            z-index: 10;
+
+            width: 50px;
+            height: 7px;
+            transform: translateY(-50%);
+
+            background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2251%22%20height%3D%228%22%20viewBox%3D%220%200%2051%208%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M37.0518%201.545C36.604%201.98221%2035.8118%202.68555%2035.2779%203.12276L34.3478%203.90214L18.5887%203.84511L2.84682%203.80709L2.33013%203.33186C1.69288%202.74258%201.14174%202.72357%200.538931%203.31285C-0.132769%203.94016%20-0.132769%205.00467%200.538931%205.63197C1.15896%206.24027%201.7101%206.20225%202.41625%205.51792L3.01905%204.94764H34.5545L35.7257%205.82207C36.3629%206.3163%2037.1035%206.90559%2037.3791%207.15271L37.8441%207.58992L39.0669%206.58243C40.3759%205.4799%2041.8226%204.62449%2042.6666%204.45341C43.3383%204.30133%2043.321%204.05421%2042.6321%203.90214C41.7365%203.67403%2040.2553%202.7806%2039.0669%201.73509C38.4641%201.20284%2037.9474%200.765625%2037.913%200.765625C37.8958%200.765625%2037.4996%201.10779%2037.0518%201.545ZM38.8086%203.35087C39.222%203.71205%2039.5664%204.09223%2039.5664%204.16827C39.5664%204.2443%2039.1703%204.68152%2038.688%205.13774L37.8097%205.95513L37.0174%205.0617L36.2079%204.16827L36.983%203.42691C37.4135%203.00871%2037.8269%202.66654%2037.913%202.66654C37.9991%202.66654%2038.4125%202.97069%2038.8086%203.35087Z%22%20fill%3D%22%23262626%22%2F%3E%0A%20%20%3Cpath%20d%3D%22M43.0282%201.46903C43.2521%201.86822%2043.6483%202.57156%2043.9066%203.02778C44.165%203.50301%2044.3889%204.01626%2044.3889%204.18734C44.3889%204.33942%2044.0789%205.08077%2043.6827%205.80312C42.6149%207.8181%2042.5977%207.87512%2042.8732%207.70404C42.9938%207.60899%2043.4244%207.30485%2043.8377%207.0007C45.0433%206.08826%2046.8173%205.19483%2048.4363%204.68158C50.0725%204.14932%2050.3653%203.99725%2049.7108%203.99725C48.4707%203.99725%2045.7323%202.81868%2043.7344%201.412C43.2349%201.05083%2042.7871%200.765691%2042.7355%200.765691C42.6838%200.765691%2042.8216%201.08885%2043.0282%201.46903Z%22%20fill%3D%22%23262626%22%2F%3E%0A%3C%2Fsvg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+
+            @include breakpoint(portrait-tablet) {
+                content: none;
+            }
+        }
+    }
+
+    &__link-image {
+        position: relative;
+
+        width: 100%;
+        aspect-ratio: 0.93 / 1;
+        overflow: hidden;
+
+        @include breakpoint(portrait-tablet) {
+            aspect-ratio: 0.95 / 1;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+
+            max-width: unset;
+            min-height: 100%;
+
+            object-fit: cover;
+            object-position: center;
+
+            transition-duration: 0.4s;
+            transition-property: transform;
+            transition-timing-function: ease-out;
+        }
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+
+        width: 100%;
+
+        &:hover {
+            .categories__link-image {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

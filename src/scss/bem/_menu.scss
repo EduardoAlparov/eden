@@ -1,0 +1,69 @@
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    &__link {
+        display: inline-flex;
+
+        text-align: center;
+
+        transition-duration: 0.3s;
+        transition-property: color;
+        transition-timing-function: ease-out;
+
+        @extend .text-1;
+
+        &.menu__link--arrow {
+
+            &::after {
+                flex-shrink: 0;
+                width: 0.8rem;
+                height: 1.8rem;
+                margin-left: 0.5rem;
+
+                background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%225%22%20viewBox%3D%220%200%208%205%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M7.03814%200.3489L7.64021%200.951532L4.35896%204.23392C4.30638%204.28683%204.24386%204.32882%204.17499%204.35747C4.10612%204.38613%204.03227%204.40088%203.95767%204.40088C3.88308%204.40088%203.80923%204.38613%203.74036%204.35747C3.67149%204.32882%203.60897%204.28683%203.55639%204.23392L0.273438%200.951532L0.875502%200.349468L3.95682%203.43022L7.03814%200.3489Z%22%20fill%3D%22%23C6B081%22%2F%3E%0A%3C%2Fsvg%3E');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+                transition-duration: 0.3s;
+                transition-property: background;
+                transition-timing-function: ease-out;
+                content: "";
+            }
+        }
+    }
+
+    &__dropdown {
+        position: absolute;
+        top: calc(100% + 1px);
+        left: 50%;
+
+        width: 100%;
+        transform: translateX(-50%);
+        display: none;
+        max-height: calc(100vh - var(--header-height));
+        overflow: hidden;
+    }
+
+    &__item {
+        padding-bottom: 2rem;
+
+        &:hover {
+            .menu__dropdown {
+                display: flex;
+            }
+
+            .menu__link {
+                color: var(--3-color, #C6B081);
+
+                &.menu__link--arrow {
+                    &::after {
+                        background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%225%22%20viewBox%3D%220%200%208%205%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M7.03814%200.3489L7.64021%200.951532L4.35896%204.23392C4.30638%204.28683%204.24386%204.32882%204.17499%204.35747C4.10612%204.38613%204.03227%204.40088%203.95767%204.40088C3.88308%204.40088%203.80923%204.38613%203.74036%204.35747C3.67149%204.32882%203.60897%204.28683%203.55639%204.23392L0.273438%200.951532L0.875502%200.349468L3.95682%203.43022L7.03814%200.3489Z%22%20fill%3D%22%23C6B081%22%2F%3E%0A%3C%2Fsvg%3E');
+                    }
+                }
+            }
+        }
+    }
+}

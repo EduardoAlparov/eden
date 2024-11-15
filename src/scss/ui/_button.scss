@@ -1,0 +1,90 @@
+.button {
+    position: relative;
+
+    display: grid;
+    place-content: center;
+    place-items: center;
+
+    height: 5rem;
+    padding: 0 7rem;
+
+    text-align: center;
+
+    transition: color 0.2s ease;
+
+    @extend .text-button;
+
+    span {
+        position: relative;
+        z-index: 150;
+
+        padding: 1rem;
+
+        color: var(--3, #C6B081);
+        white-space: nowrap;
+        @extend .text-button;
+        transition: 0.2s ease;
+
+        @include breakpoint(mobile) {
+            padding: 0.2rem;
+        }
+    }
+
+    .icon {
+        position: absolute;
+        inset: 0;
+        z-index: 100;
+
+        width: 100%;
+
+        fill: transparent;
+        stroke-width: 1px;
+        stroke: var(--3, #C6B081);
+
+        transition: 0.2s ease;
+    }
+
+    &.button--black {
+        span {
+            color: var(--1-color, #262626);
+        }
+
+        .icon {
+            stroke: var(--1-color, #262626);
+        }
+
+        &:hover {
+            .icon {
+                fill: var(--1-color, #262626);
+                stroke: var(--1-color, #262626);
+            }
+
+            span {
+                color: var(--2-color, #F2ECE0);
+            }
+        }
+    }
+
+    &.button--white {
+        span {
+            color: var(--2-color, #F2ECE0);
+        }
+
+        .icon {
+            stroke: var(--2-color, #F2ECE0);
+        }
+
+        &:hover {
+            .icon {
+                fill: var(--3, #C6B081);
+                stroke: var(--3, #C6B081);
+            }
+
+            span {
+                color: var(--1-color, #262626);
+            }
+        }
+    }
+
+    @include hover {}
+}

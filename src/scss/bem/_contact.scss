@@ -1,0 +1,52 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+
+    @include breakpoint(tablet) {
+        gap: 3rem;
+    }
+
+    &__icon {
+        width: 6.5rem;
+        aspect-ratio: 1;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: unset;
+            min-height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &__title {
+        white-space: nowrap;
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        &>p {
+            @extend .text-1;
+        }
+    }
+
+    &__link {
+        text-decoration-line: underline;
+        text-decoration-style: solid;
+        text-decoration-skip-ink: none;
+        text-decoration-thickness: auto;
+        text-underline-offset: auto;
+        text-underline-position: from-font;
+
+        @include breakpoint(tablet) {
+            display: none;
+        }
+    }
+}

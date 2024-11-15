@@ -1,0 +1,33 @@
+.review {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: 100%;
+    padding: 2rem;
+
+    background: var(--6-color, #D0CDBE);
+
+    &__userpic {
+        display: block;
+
+        width: 9.8rem;
+        height: 9.8rem;
+        margin-bottom: 4rem;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 100%;
+        filter: grayscale(100%);
+    }
+
+    &__text,
+    &__author {
+        @extend .text-1;
+    }
+
+    &__author {
+        margin-top: 3rem;
+    }
+}

@@ -1,0 +1,31 @@
+:root {
+    /* layout: */
+    --max-container-width: 100%;
+    --content-padding: 2rem;
+
+    /* colors: */
+    --accent: orange;
+    --title: #111;
+    --text: #333;
+    --back: #EDEBE0; // var(--back, #EDEBE0);
+    --back-2: #E2E0D4; // var(--back-2, #E2E0D4);
+    --back-3: #F3F2EE; // var(--back-3, #F3F2EE);
+    --white: #fff;
+    --black: #000;
+
+    --1-color: #262626; // var(--1-color, #262626);
+    --2-color: #F2ECE0; // var(--2-color, #F2ECE0);
+    --3-color: #C6B081; // var(--3-color, #C6B081);
+    --4-color: #A9A697; // var(--4-color, #A9A697);
+    --5-color: #504C4C; // var(--5-color, #504C4C);
+    --6-color: #D0CDBE; // C
+    --FAQ: #D8D4BF; // var(--FAQ, #D8D4BF);
+
+    /* typography: */
+    --main-ff: "Source Sans 3", sans-serif;
+    --second-ff: 'Canela Condensed Trial', sans-serif;
+    --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+
+    /* etc.: */
+    --transition: 0.3s ease;
+}

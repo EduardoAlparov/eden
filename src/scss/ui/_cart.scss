@@ -1,0 +1,12 @@
+.cart {
+    &>.icon {
+        width: 1.5rem;
+        height: 1.4rem;
+        fill: var(--3-color, #C6B081);
+
+        @include breakpoint(laptop) {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}

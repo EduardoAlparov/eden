@@ -1,0 +1,161 @@
+<header
+    class="page-header {{#if headerMainClass}}page-header--main page-header--animated{{else}}page-header--grey{{/if}}">
+    <div class="page-header__main">
+        <div class="page-header__site-container">
+            <button class="page-header__burger burger">
+                <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#burger"></use>
+                </svg>
+            </button>
+
+            <a href="/" class="page-header__logo logo">
+                {{#if headerMainClass}}
+                <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
+                {{else}}
+                <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#logo-black"></use>
+                </svg>
+                {{/if}}
+            </a>
+
+            <nav class="page-header__row">
+                <div class="page-header__menu">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">All products</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--arrow">Engagement rings</a>
+                            <div class="menu__dropdown menu-dropdown">
+                                <div class="menu-dropdown__grid">
+                                    <ul class="menu-dropdown__menus">
+                                        {{#each menusArray}}
+                                        <li class="menu-dropdown__menu">
+                                            <p class="menu-dropdown__menu-title">{{this.name}}</p>
+                                            <ul class="menu-dropdown__menu-list">
+                                                {{#each this.list }}
+                                                <li class="menu-dropdown__menu-item">
+                                                    <a href="#" class="menu-dropdown__menu-link">{{this}}</a>
+                                                </li>
+                                                {{/each}}
+                                            </ul>
+                                        </li>
+                                        {{/each}}
+                                    </ul>
+
+                                    <div class="menu-dropdown__aside">
+                                        <a href="#" class="menu-dropdown__image-link">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                <img class="lazy" src="./img/links/img-1.png" alt="">
+                                            </picture>
+                                            <p class="menu-dropdown__text">Get your ring within a week check ready to
+                                                ship
+                                                items →</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--arrow">Wedding bands</a>
+                            <div class="menu__dropdown menu-dropdown">
+                                <ul class="menu-dropdown__list">
+                                    <li>
+                                        <a href="#" class="menu-dropdown__image-link">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                <img class="lazy" src="./img/links/img-1.png" alt="">
+                                            </picture>
+                                            <p class="menu-dropdown__text">All</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-dropdown__image-link">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/links/img-2.webp" />
+                                                <img class="lazy" src="./img/links/img-2.png" alt="">
+                                            </picture>
+                                            <p class="menu-dropdown__text">For Him</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-dropdown__image-link">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                <img class="lazy" src="./img/links/img-1.png" alt="">
+                                            </picture>
+                                            <p class="menu-dropdown__text">For Her</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-dropdown__image-link">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/links/img-3.webp" />
+                                                <img class="lazy" src="./img/links/img-3.png" alt="">
+                                            </picture>
+                                            <p class="menu-dropdown__text">For Couples</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="menu-dropdown__image-link">
+                                            <picture>
+                                                <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                <img class="lazy" src="./img/links/img-1.png" alt="">
+                                            </picture>
+                                            <p class="menu-dropdown__text">Ready to ship</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--arrow">Bridal sets</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--arrow">Create a ring</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--arrow">Ready to ship</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--arrow">Gemstones</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="page-header__controls">
+                    <button type="button" class="page-header__search search">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#search"></use>
+                        </svg>
+
+                        <span>Search</span>
+                    </button>
+
+                    <a href="#" class="page-header__cart cart">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#cart"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="page-header__breadcrumbs breadcrumbs">
+        <ul class="breadcrumbs__list breadcrumbs__site-container">
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    HOME
+                </a>
+            </li>
+            <li class="breadcrumbs__item">
+                <a href="#" class="breadcrumbs__link">
+                    All products
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>

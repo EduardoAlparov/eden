@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Source Sans 3";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Source Sans 3"),
+        url("../assets/fonts/SourceSans3-Regular.ttf") format("ttf"),
+        url("../assets/fonts/SourceSans3-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Canela Condensed Trial";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Canela Condensed Trial"),
+        url("../assets/fonts/CanelaCondensed-Medium-Trial.otf") format("otf"),
+        url("../assets/fonts/CanelaCondensed-Medium-Trial.woff2") format("woff2");
+}

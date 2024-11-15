@@ -1,0 +1,149 @@
+.carousel {
+    background-color: var(--back, #EDEBE0);
+
+    &__outer-container {
+        position: relative;
+
+        padding-block: 22rem 12rem;
+
+        &::before,
+        &::after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 50;
+
+            width: 100%;
+            aspect-ratio: 1.5 / 1;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            content: "";
+            pointer-events: none;
+
+            @include breakpoint(laptop) {
+                content: none;
+            }
+        }
+
+        &::before {
+            bottom: calc(100% - 55%);
+
+            background-image: url('../../img/carousel/back.png');
+        }
+    }
+
+    &__site-container {
+        position: relative;
+        z-index: 51;
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.5rem;
+
+        @include breakpoint(laptop) {
+            gap: 4rem;
+        }
+    }
+
+    &__title {
+        max-width: 72rem;
+        text-align: center;
+        @extend .text-h2;
+
+        @include breakpoint(laptop) {
+            width: min-content;
+        }
+    }
+
+    &__text {
+        max-width: 73rem;
+        text-align: center;
+        @extend .text-1;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 3rem;
+
+        width: 100%;
+        margin-top: 8.5rem;
+
+        @include breakpoint(laptop) {
+            flex-direction: column-reverse;
+            margin-top: 10rem;
+        }
+    }
+
+    &__link {
+        max-width: 34rem;
+        margin-inline: auto;
+        margin-top: 6rem;
+
+        @include breakpoint(laptop) {
+            margin-top: 5.6rem;
+        }
+    }
+
+    &__controls {
+        position: relative;
+
+        width: 168px;
+        height: 19px;
+        flex-shrink: 0;
+        margin-left: auto;
+
+        @include breakpoint(laptop) {
+            margin-inline: auto;
+        }
+
+        .icon-full {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+
+        cursor: pointer;
+
+        .icon-half {
+            width: 168px;
+            height: 19px;
+            pointer-events: none;
+        }
+
+        &.carousel__btn--prev {
+            left: 0;
+        }
+
+        &.carousel__btn--next {
+            right: 0;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+
+    &__swiper.swiper {
+        min-width: 100%;
+        margin-inline: calc(var(--content-padding) * -1);
+        padding-inline: var(--content-padding);
+    }
+}

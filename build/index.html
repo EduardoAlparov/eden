@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>
+        Eden Garden - main
+    </title>
+</head>
+
+<body class="no-touch preload animated-trigger" ontouchstart="">
+    <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg>    </div>
+
+    <div class="page-content wrapper">
+        <div class="fixed-header">
+            <a href="#" class="fixed-header__text">
+                OUR PROCESSING TIMES & SHIPPING FAQ
+            </a>
+        </div>
+        <header
+            class="page-header page-header--main page-header--animated">
+            <div class="page-header__main">
+                <div class="page-header__site-container">
+                    <button class="page-header__burger burger">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#burger"></use>
+                        </svg>
+                    </button>
+        
+                    <a href="/" class="page-header__logo logo">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+        
+                    <nav class="page-header__row">
+                        <div class="page-header__menu">
+                            <ul class="menu">
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link">All products</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link--arrow">Engagement rings</a>
+                                    <div class="menu__dropdown menu-dropdown">
+                                        <div class="menu-dropdown__grid">
+                                            <ul class="menu-dropdown__menus">
+                                                <li class="menu-dropdown__menu">
+                                                    <p class="menu-dropdown__menu-title">all</p>
+                                                    <ul class="menu-dropdown__menu-list">
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">New designs</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">ICONIC</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Ready to ship</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-dropdown__menu">
+                                                    <p class="menu-dropdown__menu-title">Style</p>
+                                                    <ul class="menu-dropdown__menu-list">
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Nature inspired</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Leaf engagement</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Flower engagement</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Halo engagement</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Art nouveau rings</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Celtic Rings</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Cluster engagement</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-dropdown__menu">
+                                                    <p class="menu-dropdown__menu-title">cut</p>
+                                                    <ul class="menu-dropdown__menu-list">
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Round</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Oval</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Pear</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Emerald</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Trillion</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Marquise</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Cushion</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Cushion</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-dropdown__menu">
+                                                    <p class="menu-dropdown__menu-title">Gemstone color</p>
+                                                    <ul class="menu-dropdown__menu-list">
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Blue</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Black</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Changing</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Green</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Grey</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Orange</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Pink</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Purple</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Red</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Teal</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">White</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-dropdown__menu">
+                                                    <p class="menu-dropdown__menu-title">Gemstone</p>
+                                                    <ul class="menu-dropdown__menu-list">
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Alexandrite</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Amethyst</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Aquamarine</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Diamond</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Emerald</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Garnet</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Lab grown diamond</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Moonstone</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Morganite</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Moss agate</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Opal</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Opalescent sapphire</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Peridot</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Ruby</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Salt &amp; pepper diamond</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Sapphire</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Tanzanite</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Topaz</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Tourmaline</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="menu-dropdown__menu">
+                                                    <p class="menu-dropdown__menu-title">Rings names</p>
+                                                    <ul class="menu-dropdown__menu-list">
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Adelina</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Adonis</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Amelia</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Ariadne</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Arius</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Azalea</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Blooming Rose</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Callisto</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Claddagh inspired</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Clematis</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Cornus</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Dair</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Damariss</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Eloise</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Fiorella</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Florentina</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Freesia</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Gloria</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Horta</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Ikar</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Horta</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Ikar</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Horta</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Ikar</a>
+                                                        </li>
+                                                        <li class="menu-dropdown__menu-item">
+                                                            <a href="#" class="menu-dropdown__menu-link">Horta</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+        
+                                            <div class="menu-dropdown__aside">
+                                                <a href="#" class="menu-dropdown__image-link">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                        <img class="lazy" src="./img/links/img-1.png" alt="">
+                                                    </picture>
+                                                    <p class="menu-dropdown__text">Get your ring within a week check ready to
+                                                        ship
+                                                        items →</p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link--arrow">Wedding bands</a>
+                                    <div class="menu__dropdown menu-dropdown">
+                                        <ul class="menu-dropdown__list">
+                                            <li>
+                                                <a href="#" class="menu-dropdown__image-link">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                        <img class="lazy" src="./img/links/img-1.png" alt="">
+                                                    </picture>
+                                                    <p class="menu-dropdown__text">All</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-dropdown__image-link">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="./img/links/img-2.webp" />
+                                                        <img class="lazy" src="./img/links/img-2.png" alt="">
+                                                    </picture>
+                                                    <p class="menu-dropdown__text">For Him</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-dropdown__image-link">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                        <img class="lazy" src="./img/links/img-1.png" alt="">
+                                                    </picture>
+                                                    <p class="menu-dropdown__text">For Her</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-dropdown__image-link">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="./img/links/img-3.webp" />
+                                                        <img class="lazy" src="./img/links/img-3.png" alt="">
+                                                    </picture>
+                                                    <p class="menu-dropdown__text">For Couples</p>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="menu-dropdown__image-link">
+                                                    <picture>
+                                                        <source type="image/webp" srcset="./img/links/img-1.webp" />
+                                                        <img class="lazy" src="./img/links/img-1.png" alt="">
+                                                    </picture>
+                                                    <p class="menu-dropdown__text">Ready to ship</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link--arrow">Bridal sets</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link--arrow">Create a ring</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link--arrow">Ready to ship</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link menu__link--arrow">Gemstones</a>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="page-header__controls">
+                            <button type="button" class="page-header__search search">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#search"></use>
+                                </svg>
+        
+                                <span>Search</span>
+                            </button>
+        
+                            <a href="#" class="page-header__cart cart">
+                                <svg class="icon">
+                                    <use xlink:href="./img/sprite.svg#cart"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="page-header__breadcrumbs breadcrumbs">
+                <ul class="breadcrumbs__list breadcrumbs__site-container">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            HOME
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">
+                            All products
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="page-main">
+
+<section class="section hero js-hero-scroll-trigger">
+    <div class="hero__back hero__back--animated">
+        <picture>
+            <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-back-m.webp" />
+            <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-back.webp" />
+            <source media="(max-aspect-ratio: 4/3)" srcset="./img/hero-back-m.png" />
+            <img class="lazy" src="./img/hero-back.png" alt="hero back">
+        </picture>
+    </div>
+
+    <div class="hero__scrolling-element hero__scrolling-element--animated">
+        <div class="hero__inner hero__inner--animated js-hero-scroll-trigger-2">
+            <h1 class="hero__title">
+                Your Union Blessed and Protected by Nature 
+            </h1>
+
+            <div class="hero__second-block">
+                <div class="hero__site-container">
+                    <p class="hero__text">
+                        Capture your story in a ring created by the power of mighty and all-accepting love
+                    </p>
+
+                    <div class="hero__image hero__image--aspect">
+                        <picture>
+                            <source media="(max-aspect-ratio: 4/3)" type="image/webp"
+                                srcset="./img/hero-image-m.webp" />
+                            <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-image.webp" />
+                            <source media="(max-aspect-ratio: 4/3)" srcset="./img/hero-image-m.png" />
+                            <img class="lazy" src="./img/hero-image.png" alt="hero image">
+                        </picture>
+                    </div>
+
+                    <a href="#" class="hero__link button">
+                        <span>
+                            Start your journey here
+                        </span>
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#border"></use>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="section styles">
+    <div class="styles__site-container">
+        <div class="styles__heading">
+            <h2 class="styles__title">
+                Ring styles turned into legends
+            </h2>
+        </div>
+
+        <ul class="styles__list">
+            <li class="styles__item">
+                <a href="#" class="styles__link">
+                    <div class="styles__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/styles/pic-1.webp" />
+                            <img class="lazy" src="./img/styles/pic-1.png" alt="style image">
+                        </picture>
+                    </div>
+                    <div class="styles__link-text">
+                        <p class="styles__text">
+                            Patricia
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="styles__item">
+                <a href="#" class="styles__link">
+                    <div class="styles__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/styles/pic-2.webp" />
+                            <img class="lazy" src="./img/styles/pic-2.png" alt="style image">
+                        </picture>
+                    </div>
+                    <div class="styles__link-text">
+                        <p class="styles__text">
+                            Ariadne
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="styles__item">
+                <a href="#" class="styles__link">
+                    <div class="styles__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/styles/pic-3.webp" />
+                            <img class="lazy" src="./img/styles/pic-3.png" alt="style image">
+                        </picture>
+                    </div>
+                    <div class="styles__link-text">
+                        <p class="styles__text">
+                            Florentina
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="styles__item">
+                <a href="#" class="styles__link">
+                    <div class="styles__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/styles/pic-4.webp" />
+                            <img class="lazy" src="./img/styles/pic-4.png" alt="style image">
+                        </picture>
+                    </div>
+                    <div class="styles__link-text">
+                        <p class="styles__text">
+                            Adonis
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section categories styles">
+    <div class="categories__site-container">
+        <div class="categories__heading styles__heading">
+            <h2 class="styles__title categories__title">
+                Categories
+            </h2>
+        </div>
+
+        <ul class="categories__list">
+            <li class="categories__item">
+                <a href="#" class="categories__link">
+                    <div class="categories__link-top">
+                        <p class="categories__text">
+                            Engagement rings
+                        </p>
+                    </div>
+                    <div class="categories__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/categories/pic-1.webp" />
+                            <img class="lazy" src="./img/categories/pic-1.png" alt="style image">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+            <li class="categories__item">
+                <a href="#" class="categories__link">
+                    <div class="categories__link-top">
+                        <p class="categories__text">
+                            Wedding bands
+                        </p>
+                    </div>
+                    <div class="categories__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/categories/pic-2.webp" />
+                            <img class="lazy" src="./img/categories/pic-2.jpg" alt="style image">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+            <li class="categories__item">
+                <a href="#" class="categories__link">
+                    <div class="categories__link-top">
+                        <p class="categories__text">
+                            Bridal sets
+                        </p>
+                    </div>
+                    <div class="categories__link-image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/categories/pic-3.webp" />
+                            <img class="lazy" src="./img/categories/pic-3.png" alt="style image">
+                        </picture>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section mountain">
+    <div class="mountain__site-container">
+        <div class="mountain__image">
+            <picture>
+                <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/mountain/back-m.webp" />
+                <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/mountain/mountain-back.webp" />
+                <source media="(max-aspect-ratio: 4/3)" srcset="./img/mountain/back-m.png" />
+                <img class="lazy" src="./img/mountain/mountain-back.jpg" alt="">
+            </picture>
+        </div>
+        <div class="mountain__image mountain__image--parallax">
+            <picture>
+                <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/mountain/back-m.webp" />
+                <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/mountain/mountain.webp" />
+                <source media="(max-aspect-ratio: 4/3)" srcset="./img/mountain/back-m.png" />
+                <img class="lazy parallax-image" src="./img/mountain/mountain.pmg" alt="">
+            </picture>
+        </div>
+        <div class="mountain__body">
+            <h2 class="mountain__title">
+                Behind&nbsp;Eden Garden&nbsp;Jewelry
+            </h2>
+            <div class="mountain__desc">
+                <p class="mountain__text">
+                    Nature-inspired and guided by the magic of love, our family-owned, fine jewelry
+                    business specializes in engagement rings and wedding bands that capture the beauty
+                    of the supernatural, and its effervescent spirit. Eden Garden Jewelry provides
+                    a detail-orientated craftsmanship based in the East of Spain, with insured and
+                    fast worldwide shipping, so that your ring reflects your truest self, no matter
+                    where you are.
+                </p>
+
+                <div class="mountain__blockquote">
+                    <p class="mountain__text">
+                        We believe that each ring at Eden Garden Jewelry embodies the alchemy that
+                        continues to bring people together in the age-old ritual of love.
+                    </p>
+                </div>
+
+                <a href="#" class="mountain__link button button--white">
+                    <span>
+                        read more
+                    </span>
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#border-white"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section online">
+    <div class="online__site-container">
+        <div class="online__body">
+            <div class="online__image">
+                <picture>
+                    <source type="image/webp" srcset="./img/online/big.webp" />
+                    <img class="lazy" src="./img/online/big.jpg" alt="hero back">
+                </picture>
+            </div>
+            <div class="online__main">
+                <div class="online__heading">
+                    <h2 class="online__title">
+                        Create&nbsp;your ring&nbsp;online
+                    </h2>
+
+                    <p class="online__text">
+                        If you have your heart set on a certain gemstone or cut, Eden Garden Jewelry
+                        possesses the power to help customize your own unique, bespoke ring designs.
+                        The magic at your very fingertips.
+                    </p>
+                </div>
+
+                <div class="online__links">
+                    <div class="online__link">
+                        <div class="online__link-pic">
+                            <img class="lazy" src="./img/online/pic-1.png" alt=" ">
+                        </div>
+                        <a href="#" class="online__button button button--black">
+                            <span>
+                                start with setting
+                            </span>
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#border-black"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="online__link">
+                        <div class="online__link-pic">
+                            <img class="lazy" src="./img/online/pic-2.png" alt=" ">
+                        </div>
+                        <a href="#" class="online__button button button--black">
+                            <span>
+                                start with gemstone
+                            </span>
+                            <svg class="icon">
+                                <use xlink:href="./img/sprite.svg#border-black"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section ready">
+    <div class="ready__site-container">
+        <div class="ready__heading">
+            <h2 class="ready__title online__title">
+                Ready&nbsp;to&nbsp;ship
+            </h2>
+
+            <div class="ready__text online__text">
+                <p>
+                    If you have your heart set on a certain gemstone or cut, Eden Garden Jewelry
+                    possesses the power to help customize your own unique, bespoke ring designs.
+                    The magic at your very fingertips.
+                </p>
+                <p>
+                    Browse our other-worldly jewelry, waiting to grace you this autumn!
+                </p>
+            </div>
+
+            <a href="#" class="ready__link button button--black">
+                <span>
+                    Let your heart guide you
+                </span>
+                <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#border-black"></use>
+                </svg>
+            </a>
+        </div>
+
+        <ul class="ready__list">
+            <li class="ready__item">
+                <a href="" class="ready__card ready-card">
+                    <div class="ready-card__image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/ready/img.webp" />
+                            <img class="lazy" src="./img/ready/img.png" alt="">
+                        </picture>
+
+                        <span class="ready-card__tag tag">
+                            READY TO SHIP
+                        </span>
+                    </div>
+                    <div class="ready-card__info">
+                        <div class="ready-card__desc">
+                            <p class="ready-card__text">
+                                Verbena ring in 18K yellow gold, natural moss agate marquise cut 8x4 mm, accents lab
+                                grown diamonds<br>
+                            </p>
+                            <span class="ready-card__size">RING SIZE: 7 US </span>
+                        </div>
+                        <p class="ready-card__price">
+                            1.480,00
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="ready__item">
+                <a href="" class="ready__card ready-card">
+                    <div class="ready-card__image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/ready/img-1.webp" />
+                            <img class="lazy" src="./img/ready/img-1.png" alt="">
+                        </picture>
+
+                        <span class="ready-card__tag tag">
+                            READY TO SHIP
+                        </span>
+                    </div>
+                    <div class="ready-card__info">
+                        <div class="ready-card__desc">
+                            <p class="ready-card__text">
+                                Verbena ring in 18K yellow gold, natural moss agate marquise cut 8x4 mm, accents lab
+                                grown diamonds<br>
+                            </p>
+                            <span class="ready-card__size">RING SIZE: 7 US </span>
+                        </div>
+                        <p class="ready-card__price">
+                            1.480,00
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="ready__item">
+                <a href="" class="ready__card ready-card">
+                    <div class="ready-card__image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/ready/img-2.webp" />
+                            <img class="lazy" src="./img/ready/img-2.png" alt="">
+                        </picture>
+
+                        <span class="ready-card__tag tag">
+                            READY TO SHIP
+                        </span>
+                    </div>
+                    <div class="ready-card__info">
+                        <div class="ready-card__desc">
+                            <p class="ready-card__text">
+                                Verbena ring in 18K yellow gold, natural moss agate marquise cut 8x4 mm, accents lab
+                                grown diamonds<br>
+                            </p>
+                            <span class="ready-card__size">RING SIZE: 7 US </span>
+                        </div>
+                        <p class="ready-card__price">
+                            1.480,00
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class="ready__item">
+                <a href="" class="ready__card ready-card">
+                    <div class="ready-card__image">
+                        <picture>
+                            <source type="image/webp" srcset="./img/ready/img-3.webp" />
+                            <img class="lazy" src="./img/ready/img-3.png" alt="">
+                        </picture>
+
+                        <span class="ready-card__tag tag">
+                            READY TO SHIP
+                        </span>
+                    </div>
+                    <div class="ready-card__info">
+                        <div class="ready-card__desc">
+                            <p class="ready-card__text">
+                                Verbena ring in 18K yellow gold, natural moss agate marquise cut 8x4 mm, accents lab
+                                grown diamonds<br>
+                            </p>
+                            <span class="ready-card__size">RING SIZE: 7 US </span>
+                        </div>
+                        <p class="ready-card__price">
+                            1.480,00
+                        </p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="section certification">
+    <div class="certification__outer-container">
+        <div class="certification__site-container">
+            <div class="certification__body">
+                <div class="certification__heading">
+                    <div class="certification__icon"></div>
+
+                    <h2 class="certification__title">
+                        Ring Certification
+                    </h2>
+                </div>
+
+                <p class="certification__subtitle">
+                    IGI Laboratory Ring Certification: Quality and Authenticity
+                </p>
+
+                <picture>
+                    <source type="image/webp" srcset="./img/certification/img.webp" />
+                    <img class="lazy" src="./img/certification/img.png" alt="hero back">
+                </picture>
+
+                <div class="certification__text">
+                    <p>
+                        Backed by the renowned International Gemological Institute,
+                        IGI certification guarantees the quality, authenticity and
+                        value of your fine jewelry.
+
+                    </p>
+                    <p>
+                        Your soul will be at ease and heart in the right place with
+                        a detailed report. You’ll have a complete biography of the
+                        ring of your choosing – detailed information on all the
+                        gemstones used, as well as the gold type and weight of the ring.
+                    </p>
+                </div>
+
+                <a href="#" class="certification__link button button--black">
+                    <span>
+                        EXPLORE MORE AND REQUEST YOUR CERTIFICATE
+                    </span>
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#border-black"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="certification__decore">
+        <picture>
+            <source media="(max-width: (1200px))" type="image/webp" srcset="./img/certification/decore-m.webp" />
+            <source media="(min-width: (1200px))" type="image/webp" srcset="./img/certification/decore.webp" />
+            <source media="(max-width: (1200px))" srcset="./img/certification/decore-m.png" />
+            <img class="lazy" src="./img/certification/decore.png" alt="">
+        </picture>
+    </div>
+</section>
+
+<section class="section carousel js-carosel-swiper">
+    <div class="carousel__outer-container">
+        <div class="carousel__site-container">
+            <div class="carousel__heading">
+                <h2 class="carousel__title">
+                    See&nbsp;our&nbsp;happy couples worldwide
+                </h2>
+                <p class="carousel__text">
+                    Gifted with the power to create rings that unite couples on a
+                    global scale, we have spent the last decade handcrafting unique
+                    jewelry for our beloved and extraordinary clientele, creating
+                    myriads of memories along the way. Our chests continue to burst
+                    with sheer gratitude and joy as our jewelry spreads a message
+                    of kindred love and acceptance.
+                </p>
+            </div>
+
+            <div class="carousel__body">
+                <div class="carousel__controls">
+                    <svg class="icon icon-full">
+                        <use xlink:href="./img/sprite.svg#btn-full"></use>
+                    </svg>
+
+                    <button type="button" class="carousel__btn carousel__btn--prev">
+                        <svg class="icon icon-half">
+                            <use xlink:href="./img/sprite.svg#btn-prev"></use>
+                        </svg>
+                    </button>
+
+                    <button type="button" class="carousel__btn carousel__btn--next">
+                        <svg class="icon icon-half">
+                            <use xlink:href="./img/sprite.svg#btn-prev"></use>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="carousel__swiper swiper">
+                    <ul class="carousel__swiper-wrapper swiper-wrapper">
+                        <li class="carousel__swiper-slide swiper-slide">
+                            <div class="carousel__review review">
+                                <img class="review__userpic" src="./img/carousel/userpic.jpg" alt="">
+                                <p class="review__text">
+                                    I cannot recommend Eden Garden Jewelry enough! Their rings are unlike any
+                                    I’ve ever seen before. The level of detail makes the rings look like they’re
+                                    actually alive! The artistry, quality, and precision are incredible. Not
+                                    only are the pieces sensational, but the communication along the way makes
+                                    the experience amazing! Thank you so much!!
+                                </p>
+                                <p class="review__author">
+                                    Melissa W., Lincoln MA
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel__swiper-slide swiper-slide">
+                            <div class="carousel__review review">
+                                <img class="review__userpic" src="./img/carousel/userpic.jpg" alt="">
+                                <p class="review__text">
+                                    I cannot recommend Eden Garden Jewelry enough! Their rings are unlike any
+                                    I’ve ever seen before. The level of detail makes the rings look like they’re
+                                    actually alive! The artistry, quality, and precision are incredible. Not
+                                    only are the pieces sensational, but the communication along the way makes
+                                    the experience amazing! Thank you so much!!
+                                </p>
+                                <p class="review__author">
+                                    Melissa W., Lincoln MA
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel__swiper-slide swiper-slide">
+                            <div class="carousel__review review">
+                                <img class="review__userpic" src="./img/carousel/userpic.jpg" alt="">
+                                <p class="review__text">
+                                    I cannot recommend Eden Garden Jewelry enough! Their rings are unlike any
+                                    I’ve ever seen before. The level of detail makes the rings look like they’re
+                                    actually alive! The artistry, quality, and precision are incredible. Not
+                                    only are the pieces sensational, but the communication along the way makes
+                                    the experience amazing! Thank you so much!!
+                                </p>
+                                <p class="review__author">
+                                    Melissa W., Lincoln MA
+                                </p>
+                            </div>
+                        </li>
+                        <li class="carousel__swiper-slide swiper-slide">
+                            <div class="carousel__review review">
+                                <img class="review__userpic" src="./img/carousel/userpic.jpg" alt="">
+                                <p class="review__text">
+                                    I cannot recommend Eden Garden Jewelry enough! Their rings are unlike any
+                                    I’ve ever seen before. The level of detail makes the rings look like they’re
+                                    actually alive! The artistry, quality, and precision are incredible. Not
+                                    only are the pieces sensational, but the communication along the way makes
+                                    the experience amazing! Thank you so much!!
+                                </p>
+                                <p class="review__author">
+                                    Melissa W., Lincoln MA
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <a href="#" class="carousel__link button button--black">
+                <span>
+                    Read all reviews
+                </span>
+                <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#border-black"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section rating">
+    <div class="rating__site-container">
+        <div class="rating__body">
+            <div class="rating__left">
+                <h2 class="rating__title">
+                    AVERAGE<br> STORE&nbsp;RATING
+                </h2>
+
+                <div class="rating__big-image">
+                    <picture>
+                        <source type="image/webp" srcset="./img/rating/big.webp" />
+                        <img class="lazy" src="./img/rating/big.jpg" alt="">
+                    </picture>
+                </div>
+            </div>
+            <div class="rating__right">
+                <div class="rating__stars-block">
+                    <div class="rating__star">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#stars"></use>
+                        </svg>
+                    </div>
+
+                    <p class="rating__number-value">
+                        5.00
+                    </p>
+                </div>
+
+                <div class="rating__small-image">
+                    <picture>
+                        <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/rating/mobile.webp" />
+                        <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/rating/small.webp" />
+                        <source media="(max-aspect-ratio: 4/3)" srcset="./img/rating/mobile.png" />
+                        <img class="lazy" src="./img/rating/small.png" alt="">
+                    </picture>
+                </div>
+
+                <p class="rating__text">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">1K</a> Verified Tales from Our<br>
+                    Beloved Customers
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section questions">
+    <div class="questions__site-container">
+        <div class="questions__heading">
+            <h2 class="questions__title">
+                Frequently<br> Asked&nbsp;Questions
+            </h2>
+            <p class="questions__text">
+                Finding the engagement ring that fulfills all your wants and desires can oftentimes
+                be as troubling as wandering through an impenetrable, dark forest, with no clear
+                direction in sight. Let us help you with our FAQ section, your personal guiding light.
+            </p>
+        </div>
+
+        <ul class="questions__list">
+            <li class="questions__item footer-menu">
+                <p class="footer-menu__title visually-hidden">Where can I see and buy your rings in person?</p>
+                <input class="footer-menu__input" hidden type="checkbox" name="questions-item" id="questions-item-1">
+                <label for="questions-item-1" class="footer-menu__label footer-menu__label--questions">
+                    Where can I see and buy your rings in person?
+                    <span></span>
+                </label>
+                <ul class="footer-menu__list footer-menu__dropdown">
+                    <p class="footer-menu__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse itaque
+                        voluptatum qui rem dolorem perspiciatis tempore excepturi vitae, nesciunt dolorum
+                        voluptatibus, debitis quaerat, neque facilis obcaecati animi natus corporis?
+                    </p>
+                </ul>
+            </li>
+            <li class="questions__item footer-menu">
+                <p class="footer-menu__title visually-hidden">What payment methods are available?</p>
+                <input class="footer-menu__input" hidden type="checkbox" name="questions-item" id="questions-item-2">
+                <label for="questions-item-2" class="footer-menu__label footer-menu__label--questions">
+                    What payment methods are available?
+                    <span></span>
+                </label>
+                <ul class="footer-menu__list footer-menu__dropdown">
+                    <p class="footer-menu__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse itaque
+                        voluptatum qui rem dolorem perspiciatis tempore excepturi vitae, nesciunt dolorum
+                        voluptatibus, debitis quaerat, neque facilis obcaecati animi natus corporis?
+                    </p>
+                </ul>
+            </li>
+            <li class="questions__item footer-menu">
+                <p class="footer-menu__title visually-hidden">How long does it take to prepare my order of shipping?</p>
+                <input class="footer-menu__input" hidden type="checkbox" name="questions-item" id="questions-item-3">
+                <label for="questions-item-3" class="footer-menu__label footer-menu__label--questions">
+                    How long does it take to prepare my order of shipping?
+                    <span></span>
+                </label>
+                <ul class="footer-menu__list footer-menu__dropdown">
+                    <p class="footer-menu__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse itaque
+                        voluptatum qui rem dolorem perspiciatis tempore excepturi vitae, nesciunt dolorum
+                        voluptatibus, debitis quaerat, neque facilis obcaecati animi natus corporis?
+                    </p>
+                </ul>
+            </li>
+            <li class="questions__item footer-menu">
+                <p class="footer-menu__title visually-hidden">Do you offer international shipping?</p>
+                <input class="footer-menu__input" hidden type="checkbox" name="questions-item" id="questions-item-4">
+                <label for="questions-item-4" class="footer-menu__label footer-menu__label--questions">
+                    Do you offer international shipping?
+                    <span></span>
+                </label>
+                <ul class="footer-menu__list footer-menu__dropdown">
+                    <p class="footer-menu__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse itaque
+                        voluptatum qui rem dolorem perspiciatis tempore excepturi vitae, nesciunt dolorum
+                        voluptatibus, debitis quaerat, neque facilis obcaecati animi natus corporis?
+                    </p>
+                </ul>
+            </li>
+            <li class="questions__item footer-menu">
+                <p class="footer-menu__title visually-hidden">Do I have to pay customs fees and import tax for my order?
+                </p>
+                <input class="footer-menu__input" hidden type="checkbox" name="questions-item" id="questions-item-5">
+                <label for="questions-item-5" class="footer-menu__label footer-menu__label--questions">
+                    Do I have to pay customs fees and import tax for my order?
+                    <span></span>
+                </label>
+                <ul class="footer-menu__list footer-menu__dropdown">
+                    <p class="footer-menu__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse itaque
+                        voluptatum qui rem dolorem perspiciatis tempore excepturi vitae, nesciunt dolorum
+                        voluptatibus, debitis quaerat, neque facilis obcaecati animi natus corporis?
+                    </p>
+                </ul>
+            </li>
+            <li class="questions__item footer-menu">
+                <p class="footer-menu__title visually-hidden">How your gold is sourced?</p>
+                <input class="footer-menu__input" hidden type="checkbox" name="questions-item" id="questions-item-6">
+                <label for="questions-item-6" class="footer-menu__label footer-menu__label--questions">
+                    How your gold is sourced?
+                    <span></span>
+                </label>
+                <ul class="footer-menu__list footer-menu__dropdown">
+                    <p class="footer-menu__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora esse itaque
+                        voluptatum qui rem dolorem perspiciatis tempore excepturi vitae, nesciunt dolorum
+                        voluptatibus, debitis quaerat, neque facilis obcaecati animi natus corporis?
+                    </p>
+                </ul>
+            </li>
+        </ul>
+
+        <a href="#" class="questions__link button button--black">
+            <span>
+                read more
+            </span>
+            <svg class="icon">
+                <use xlink:href="./img/sprite.svg#border-black"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+
+
+        </main>
+        <footer class="page-footer">
+            <div class="page-footer__site-container page-footer__row page-footer__row--main">
+                <div class="page-footer__col">
+                    <a href="#" class="page-footer__logo">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#logo-black"></use>
+                        </svg>
+                    </a>
+        
+                    <div class="page-footer__socials socials">
+                        <p class="socials__title">
+                            subscribe to our social media
+                        </p>
+                        <ul class="socials__list">
+                            <li>
+                                <a href="#" class="socials__link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#inst"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="socials__link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#prn"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="socials__link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="socials__link">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#yt"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer__col page-footer__col--big">
+                    <ul class="page-footer__menus">
+                        <li class="page-footer__menu footer-menu">
+                            <p class="footer-menu__title">Shop</p>
+                            <input class="footer-menu__input" hidden type="checkbox" name="footer-menu" id="footer-menu-1">
+                            <label for="footer-menu-1" class="footer-menu__label">
+                                Shop
+                                <span></span>
+                            </label>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">All products</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Engagement rings</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Wedding bands</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Bridal sets</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Create a ring</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Ready to ship</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Gemstones</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-footer__menu footer-menu">
+                            <p class="footer-menu__title">About</p>
+                            <input class="footer-menu__input" hidden type="checkbox" name="footer-menu" id="footer-menu-2">
+                            <label for="footer-menu-2" class="footer-menu__label">
+                                About
+                                <span></span>
+                            </label>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">About us</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Our Story</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Our team</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">News & Publications</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Contact us</a></li>
+                            </ul>
+                        </li>
+                        <li class="page-footer__menu footer-menu">
+                            <p class="footer-menu__title">Customer Care</p>
+                            <input class="footer-menu__input" hidden type="checkbox" name="footer-menu" id="footer-menu-3">
+                            <label for="footer-menu-3" class="footer-menu__label">
+                                Customer Care
+                                <span></span>
+                            </label>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Shipping & Processing</a>
+                                </li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Returns & Exchanges</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">How To Measure Ring Size</a>
+                                </li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">News & Publications</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Jewelry Care Tips</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Ring Size Chart</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">FAQ </a></li>
+                            </ul>
+                        </li>
+                        <li class="page-footer__menu footer-menu">
+                            <p class="footer-menu__title">Legal</p>
+                            <input class="footer-menu__input" hidden type="checkbox" name="footer-menu" id="footer-menu-4">
+                            <label for="footer-menu-4" class="footer-menu__label">
+                                Legal
+                                <span></span>
+                            </label>
+                            <ul class="footer-menu__list">
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Warranty</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Ring Resize Policies</a>
+                                </li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Ring Certification</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Gold Certification</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Terms of Service</a></li>
+                                <li class="footer-menu__item"><a href="#" class="footer-menu__link">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="page-footer__site-container page-footer__row page-footer__row--bottom">
+                <div class="page-footer__col page-footer__col--small">
+                    <div class="page-footer__langs">
+                        <div class="page-footer__language language">
+                            <button type="button" class="language__button">
+                                <span class="language__value">
+                                    Spain (EUR €)
+                                </span>
+                                <i class="language__arrow"></i>
+                            </button>
+                        </div>
+        
+                        <span class="page-footer__divider"></span>
+        
+                        <ul class="page-footer__pay-system pay-system">
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-1"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-2"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-3"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-4"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-5"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-6"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="pay-system__item">
+                                <a href="#" class="pay-system__tab">
+                                    <svg class="icon">
+                                        <use xlink:href="./img/sprite.svg#pay-7"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="page-footer__copyright">
+                        <p>
+                            Copyright © 2024, Eden Garden Jewelry™.
+                        </p>
+                        <p>
+                            Powered by Shopify
+                        </p>
+                    </div>
+                </div>
+                <div class="page-footer__col page-footer__col--big"></div>
+            </div>
+        
+        </footer>
+        <style>
+            .ie-placeholder {
+                z-index: 4000;
+                position: fixed;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #202020;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                
+            }
+            .ie-placeholder__message {
+                font-size: 2rem;
+                line-height: 1.2;
+                font-weight: 500;
+                margin: auto;
+            }
+            @supports (display: grid) {
+                .ie-placeholder {
+                    display: none;
+                }
+            }
+        </style>
+        <div class="ie-placeholder">
+            <div class="ie-placeholder__message">
+                Извините, ваш браузер не поддерживается
+            </div>
+        </div>        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="assets/js/backend.js"></script>
+    </div>
+</body>
+
+</html>

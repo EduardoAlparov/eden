@@ -1,0 +1,161 @@
+.intro {
+
+    &:not(:has(.contacts)) {
+        margin-bottom: 12rem;
+
+        @include breakpoint(laptop) {
+            margin-bottom: 8rem;
+        }
+    }
+
+    &__site-container {
+        @extend ._intro-padding-top;
+    }
+
+    &__heading {
+        margin-block: 2rem;
+
+        @extend .text-h3;
+
+        @include breakpoint(laptop) {
+            text-align: center;
+        }
+
+
+        &.intro__heading--bigger {
+            margin-bottom: 6rem;
+            text-align: center;
+
+            @extend .text-h2;
+
+            @include breakpoint(laptop) {
+                margin-inline: auto;
+                margin-bottom: 4rem;
+                width: min-content;
+            }
+        }
+    }
+
+    &__grid {
+        display: flex;
+        align-items: stretch;
+
+        background: var(--6-color, #D0CDBE);
+
+        @include breakpoint(laptop) {
+            flex-direction: column-reverse;
+            margin-inline: calc(var(--content-padding) * -1);
+            padding-inline: var(--content-padding);
+        }
+    }
+
+    &__image,
+    &__info {
+        flex: 1 1 50%;
+    }
+
+    &__image {
+        position: relative;
+        overflow: hidden;
+        aspect-ratio: 1.16 / 1;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            display: block;
+            width: 100%;
+            max-width: unset;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+
+        padding-block: 12.4rem;
+
+
+        @include breakpoint(laptop) {
+            padding-block: 6rem;
+        }
+    }
+
+    &__tag {
+        @extend .text-1;
+    }
+
+    &__title {
+        text-align: center;
+        @extend .text-h3;
+
+        &:not(.intro__heading--bigger) {
+            @include breakpoint(portrait-tablet) {
+                font-size: 4.9rem;
+            }
+        }
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &>p {
+            max-width: 47.5rem;
+            text-align: center;
+            @extend .text-1;
+
+            &:not(:last-child) {
+                max-width: 47rem;
+                margin-bottom: 2rem;
+            }
+
+            &:last-child {
+                max-width: 52rem;
+            }
+        }
+    }
+
+    &__catalog {
+        margin-top: 4rem;
+
+        @include breakpoint(laptop) {
+            margin-top: 6rem;
+        }
+    }
+
+    &__list {
+        display: flex;
+        gap: 6rem;
+        justify-content: center;
+
+        @include breakpoint(supersmall-mobile) {
+            gap: 2rem;
+        }
+
+        li {
+            flex: 0 1 36.6rem;
+
+            @include breakpoint(tablet) {
+                flex: 0 1 33%;
+            }
+        }
+    }
+
+    &__contacts {
+        margin-top: 12.2rem;
+
+        @include breakpoint(laptop) {
+            margin-top: 8rem;
+        }
+    }
+}

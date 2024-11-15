@@ -1,0 +1,142 @@
+.certification {
+    position: relative;
+
+    padding-block: 16.5rem 25rem;
+
+    background-color: var(--back, #EDEBE0);
+
+    @include breakpoint(desktop) {
+        padding-block: 8.2rem 12.5rem;
+    }
+
+    &::before,
+    &::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 100;
+
+        width: 100%;
+        aspect-ratio: 2.4 / 1;
+
+        background-size: cover;
+        content: "";
+        pointer-events: none;
+    }
+
+    &::before {
+        bottom: calc(100% - 25%);
+
+        background-image: url('../../img/certification/head.png');
+
+        @include breakpoint(desktop) {
+            bottom: calc(100% - 20%);
+        }
+
+        @include breakpoint(laptop) {
+            bottom: unset;
+            top: -5%;
+            aspect-ratio: 1;
+            background-image: url('../../img/certification/head-m.png');
+        }
+    }
+
+    &::after {
+        top: calc(100% - 45%);
+
+        background-image: url('../../img/certification/bottom.png');
+
+        @include breakpoint(desktop) {
+            top: calc(100% - 44%);
+        }
+
+        @include breakpoint(laptop) {
+            top: unset;
+            bottom: -5%;
+            aspect-ratio: 1;
+            background-image: url('../../img/certification/bottom-m.png');
+        }
+    }
+
+    &__outer-container {
+        position: relative;
+        z-index: 200;
+
+        background-color: var(--6-color, #D0CDBE);
+    }
+
+    &__decore {
+        position: absolute;
+        top: calc(100% - 30%);
+        left: 0;
+        right: 0;
+        z-index: 50;
+
+        width: 100%;
+        aspect-ratio: 1.78 / 1;
+
+        pointer-events: none;
+
+        @include breakpoint(laptop) {
+            top: 105%;
+            bottom: unset;
+            transform: translateY(-50%);
+            aspect-ratio: 1.4 / 1;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__body,
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6rem;
+    }
+
+    &__icon {
+        width: 102px;
+        height: 110px;
+
+        background-image: url('../../img/certification/vector.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__title {
+        margin-inline: auto;
+
+        text-align: center;
+        @extend .text-h2;
+
+        @include breakpoint(laptop) {
+            width: min-content;
+        }
+    }
+
+    &__subtitle,
+    &__text {
+        max-width: 65.6rem;
+        text-align: center;
+        @extend .text-1;
+
+        &>p {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__link {
+        &.button {
+            padding: 0.7rem 1.8rem;
+        }
+    }
+}

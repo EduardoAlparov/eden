@@ -1,0 +1,56 @@
+.catalog-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    &__body {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    &__image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 100;
+
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: unset;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    &__text {
+        position: relative;
+        z-index: 200;
+
+        padding-inline: 4rem;
+
+        color: var(--2-color, #F2ECE0);
+        text-align: center;
+
+        @extend .text-1;
+
+        &.catalog-link__text--maxW {
+            max-width: 37ch;
+        }
+
+        @include breakpoint(portrait-tablet) {
+            padding-inline: 1rem;
+        }
+    }
+}

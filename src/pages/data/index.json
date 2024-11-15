@@ -1,0 +1,105 @@
+{
+    "title": "Eden Garden - main",
+    "headerMainClass": true,
+    "menusArray": [
+        {
+            "name": "all",
+            "list": ["New designs", "ICONIC", "Ready to ship"]
+        },
+        {
+            "name": "Style",
+            "list": [
+                "Nature inspired",
+                "Leaf engagement",
+                "Flower engagement",
+                "Halo engagement",
+                "Art nouveau rings",
+                "Celtic Rings",
+                "Cluster engagement"
+            ]
+        },
+        {
+            "name": "cut",
+            "list": [
+                "Round",
+                "Oval",
+                "Pear",
+                "Emerald",
+                "Trillion",
+                "Marquise",
+                "Cushion",
+                "Cushion"
+            ]
+        },
+        {
+            "name": "Gemstone color",
+            "list": [
+                "Blue",
+                "Black",
+                "Changing",
+                "Green",
+                "Grey",
+                "Orange",
+                "Pink",
+                "Purple",
+                "Red",
+                "Teal",
+                "White"
+            ]
+        },
+        {
+            "name": "Gemstone",
+            "list": [
+                "Alexandrite",
+                "Amethyst",
+                "Aquamarine",
+                "Diamond",
+                "Emerald",
+                "Garnet",
+                "Lab grown diamond",
+                "Moonstone",
+                "Morganite",
+                "Moss agate",
+                "Opal",
+                "Opalescent sapphire",
+                "Peridot",
+                "Ruby",
+                "Salt & pepper diamond",
+                "Sapphire",
+                "Tanzanite",
+                "Topaz",
+                "Tourmaline"
+            ]
+        },
+        {
+            "name": "Rings names",
+            "list": [
+                "Adelina",
+                "Adonis",
+                "Amelia",
+                "Ariadne",
+                "Arius",
+                "Azalea",
+                "Blooming Rose",
+                "Callisto",
+                "Claddagh inspired",
+                "Clematis",
+                "Cornus",
+                "Dair",
+                "Damariss",
+                "Eloise",
+                "Fiorella",
+                "Florentina",
+                "Freesia",
+                "Gloria",
+                "Horta",
+                "Ikar",
+                "Horta",
+                "Ikar",
+                "Horta",
+                "Ikar",
+                "Horta"
+            ]
+        }
+    ]
+}

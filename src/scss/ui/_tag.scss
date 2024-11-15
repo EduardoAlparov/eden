@@ -1,0 +1,11 @@
+.tag {
+    display: block;
+    width: max-content;
+    padding: 1rem;
+
+    color: var(--5-color, #504C4C);
+    text-align: center;
+
+    background-color: var(--back-3, #F3F2EE);
+    @extend .text-1;
+}

@@ -1,0 +1,121 @@
+.mountain {
+    position: relative;
+    overflow: hidden;
+
+    &__image {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        z-index: 50;
+
+        width: 100%;
+        height: 100%;
+        transform: translate(-50%, -50%);
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: unset;
+            min-height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &.mountain__image--parallax {
+            img {
+                width: 110%;
+            }
+        }
+    }
+
+    &__body {
+        position: relative;
+        z-index: 100;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding-block: 14rem 37.5rem;
+
+        color: var(--2, var(--2, #F2ECE0));
+
+        @include breakpoint(laptop) {
+            padding-block: 9rem 6.4rem;
+        }
+    }
+
+    &__title {
+        width: min-content;
+        margin-inline: auto;
+
+        text-align: center;
+
+        @extend .text-big;
+    }
+
+    &__text {
+        max-width: 42rem;
+        text-align: center;
+
+        @extend .text-1;
+
+        @include breakpoint(laptop) {
+            max-width: 34rem;
+        }
+    }
+
+    &__desc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10rem;
+
+        margin-top: 62rem;
+
+        @include breakpoint(laptop) {
+            margin-top: 61.5rem;
+            gap: 4rem;
+        }
+    }
+
+    &__blockquote {
+        position: relative;
+
+        margin-top: 9rem;
+        padding-top: 3.5rem;
+
+        @include breakpoint(laptop) {
+            margin-top: unset;
+        }
+
+        &::before {
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            width: 13px;
+            height: 11px;
+            transform: translateX(-50%);
+
+            background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%2212%22%20viewBox%3D%220%200%2014%2012%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M3.8873%2011.7656C2.91731%2011.7656%202.17927%2011.4032%201.67319%2010.6784C1.1671%209.93229%200.914062%208.90904%200.914062%207.60865C0.914062%206.09508%201.28308%204.76272%202.02112%203.61156C2.78024%202.43908%203.90839%201.49043%205.40555%200.765625L6.41771%202.81214C5.46881%203.28113%204.75186%203.84605%204.26686%204.50691C3.80295%205.14644%203.571%205.9352%203.571%206.87318L3.69752%209.62318L2.17927%207.48074C2.41122%207.28888%202.67481%207.129%202.97002%207.00109C3.26524%206.87318%203.571%206.80923%203.8873%206.80923C4.56208%206.80923%205.13142%207.02241%205.59533%207.44877C6.08032%207.8538%206.32282%208.41873%206.32282%209.14353C6.32282%209.95361%206.09087%2010.5931%205.62696%2011.0621C5.18414%2011.5311%204.60425%2011.7656%203.8873%2011.7656ZM11.3836%2011.7656C10.4137%2011.7656%209.67562%2011.4032%209.16954%2010.6784C8.66345%209.93229%208.41041%208.90904%208.41041%207.60865C8.41041%206.09508%208.77943%204.76272%209.51747%203.61156C10.2766%202.43908%2011.4047%201.49043%2012.9019%200.765625L13.9141%202.81214C12.9652%203.28113%2012.2482%203.84605%2011.7632%204.50691C11.2993%205.14644%2011.0673%205.9352%2011.0673%206.87318L11.1939%209.62318L9.67562%207.48074C9.90757%207.28888%2010.1712%207.129%2010.4664%207.00109C10.7616%206.87318%2011.0673%206.80923%2011.3836%206.80923C12.0584%206.80923%2012.6278%207.02241%2013.0917%207.44877C13.5767%207.8538%2013.8192%208.41873%2013.8192%209.14353C13.8192%209.95361%2013.5872%2010.5931%2013.1233%2011.0621C12.6805%2011.5311%2012.1006%2011.7656%2011.3836%2011.7656Z%22%20fill%3D%22%23C6B081%22%2F%3E%0A%3C%2Fsvg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            content: "";
+        }
+
+        &>p {
+            padding-block: 2rem;
+
+            border-top: 1px solid var(--3-color, #C6B081);
+            border-bottom: 1px solid var(--3-color, #C6B081);
+        }
+    }
+
+    &__link {
+        width: 33.9rem;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,52 @@
+.breadcrumbs {
+    --bc-gap: 1rem;
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: var(--bc-gap);
+
+
+        @include breakpoint(laptop) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        flex-shrink: 0;
+
+        &:last-child {
+            .breadcrumbs__link {
+                color: var(--3-color, #C6B081);
+
+                &::after {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__link {
+        display: inline-flex;
+        align-items: center;
+        gap: var(--bc-gap);
+
+        &::after {
+            display: block;
+            flex-shrink: 0;
+
+            width: 0.5rem;
+            height: 0.6rem;
+
+            background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%225%22%20height%3D%226%22%20viewBox%3D%220%200%205%206%22%20fill%3D%22none%22%3E%0A%20%20%3Cpath%20d%3D%22M4.01205%203.20076L4.01207%203.20074C4.12931%203.09583%204.12931%202.91966%204.01207%202.81475L1.3872%200.466052C1.32935%200.414287%201.25735%200.391211%201.18702%200.391211C1.11709%200.391211%201.0442%200.41571%200.987934%200.466052C0.870688%200.570962%200.870688%200.74713%200.987934%200.85204L3.39711%203.00775L1.02434%205.13088C0.907099%205.23579%200.907099%205.41195%201.02434%205.51686C1.13512%205.61599%201.31171%205.61599%201.42249%205.51688C1.4225%205.51687%201.42251%205.51687%201.42251%205.51686L4.01205%203.20076Z%22%20fill%3D%22%23262626%22%20stroke%3D%22%23262626%22%20stroke-width%3D%220.2%22%2F%3E%0A%3C%2Fsvg%3E');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            content: "";
+        }
+
+        @extend .text-1;
+    }
+}

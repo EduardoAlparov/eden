@@ -1,0 +1,60 @@
+// RESETS:
+@import 'content/reset';
+// @import 'content/normalize';
+
+@import 'settings/vendor';
+@import 'utils/mixins';
+
+// FONTS:
+@import 'content/fonts';
+
+// SETTINGS:
+@import 'settings/vars';
+@import 'settings/global';
+@import 'settings/utils';
+@import 'settings/animations';
+@import 'settings/vendor';
+
+// LAYOUTS:
+@import 'layouts/layout';
+@import 'layouts/modal';
+@import 'layouts/page-header';
+@import 'layouts/page-footer';
+@import 'layouts/breadcrumbs';
+
+//UI:
+@import 'ui/_button';
+@import 'ui/_search';
+@import 'ui/cart';
+@import 'ui/burger';
+@import 'ui/tag';
+@import 'ui/checkbox';
+
+// //BEM:
+@import 'bem/logo';
+@import 'bem/menu';
+@import 'bem/hero';
+@import 'bem/socials';
+@import 'bem/language';
+@import 'bem/pay-system';
+@import 'bem/footer-menu';
+@import 'bem/questions';
+@import 'bem/styles';
+@import 'bem/categories';
+@import 'bem/rating';
+@import 'bem/mountain';
+@import 'bem/online';
+@import 'bem/ready';
+@import 'bem/ready-card';
+@import 'bem/certification';
+@import 'bem/carousel';
+@import 'bem/review';
+@import 'bem/intro';
+@import 'bem/catalog';
+@import 'bem/filters';
+@import 'bem/catalog-link';
+@import 'bem/catalog-pagination';
+@import 'bem/range-slider';
+@import 'bem/contact';
+@import 'bem/contacts';
+@import 'bem/menu-dropdown';
