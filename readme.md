@@ -22,3 +22,9 @@ npm run dev
 ```bash
 npm run build
 ```
+
+# Ссылки на верстку
+
+## Страница - [Главная](https://eduardoalparov.github.io/eden/).
+## Страница - [Каталог](https://eduardoalparov.github.io/eden/products.html).
+## Страница - [Контакты](https://eduardoalparov.github.io/eden/contacts.html).
