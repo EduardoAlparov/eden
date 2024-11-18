@@ -30,6 +30,10 @@
 
     &__logo {
         margin-inline: auto;
+
+        @include breakpoint(laptop) {
+            margin-top: 0.5rem;
+        }
     }
 
     &__burger {
@@ -81,6 +85,13 @@
 
         @include breakpoint(laptop) {
             margin-left: unset;
+            padding-bottom: 0;
+        }
+
+        &.page-header__controls--minus-ml {
+            @include breakpoint(laptop) {
+                margin-left: -3.5rem;
+            }
         }
     }
 
@@ -188,9 +199,15 @@
             }
         }
 
-        .page-header__logo,
         .page-header__breadcrumbs {
             display: none;
+        }
+
+        .page-header__logo {
+
+            @include breakpointMF(desktop) {
+                display: none;
+            }
         }
     }
 }

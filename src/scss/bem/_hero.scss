@@ -12,13 +12,12 @@
     &__back {
         position: absolute;
         top: 0;
-        left: 0;
-        right: 0;
-        bottom: -5rem;
+        left: 50%;
         z-index: -1;
 
-        width: 100%;
+        width: 110%;
         min-height: 100vh;
+        transform: translateX(-50%);
 
         img {
             display: block;
@@ -61,6 +60,10 @@
         top: 0;
         right: 0;
         left: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
 
         width: 100%;
         padding-top: calc(100vh - var(--title-height) - 5rem);
@@ -115,17 +118,16 @@
         }
     }
 
-    &__outer {
-        margin-inline: calc(var(--content-padding) * -1);
-    }
-
     &__inner {
         position: relative;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         gap: 5rem;
+
+        flex-grow: 1;
+        min-height: calc(100vh - var(--title-height) - 5rem);
 
         &::after {
             position: absolute;
@@ -166,6 +168,16 @@
         }
     }
 
+    &__second-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        flex-grow: 1;
+
+    }
+
     &__text {
         position: relative;
         z-index: 100;
@@ -187,7 +199,7 @@
         overflow: hidden;
 
         clip-path: inset(0 0 0 0);
-        transition: clip-path 0.5s ease;
+        transition: clip-path 1s ease;
 
         img {
             position: absolute;
@@ -204,7 +216,11 @@
         }
 
         &.hero__image--aspect {
-            clip-path: inset(0 25% 0 25%);
+            clip-path: inset(0 30% 0 30%);
+
+            @include aspectRatio(portrait) {
+                clip-path: inset(0 0 0 0);
+            }
         }
     }
 

@@ -73,10 +73,6 @@
             @include breakpoint(tablet) {
                 flex: 0 1 calc(100% / 2 - (2rem * 1 / 2));
             }
-
-            @include breakpoint(supersmall-mobile) {
-                flex: 1 1 100%;
-            }
         }
     }
 

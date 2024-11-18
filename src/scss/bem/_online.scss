@@ -97,7 +97,8 @@
         gap: 3rem;
 
         @include breakpoint(supersmall-mobile) {
-            flex-direction: column;
+            // flex-direction: column;
+            gap: 1rem;
         }
     }
 
@@ -115,7 +116,7 @@
         }
 
         @include breakpoint(supersmall-mobile) {
-            flex: 1 1 auto;
+            flex: 0 0 calc(100% / 2 - (1rem / 2));
         }
     }
 

@@ -52,6 +52,11 @@
         text-align: center;
 
         @extend .text-big;
+
+        @include breakpoint(small-tablet) {
+            margin-inline: calc(var(--content-padding) * -1);
+            padding-inline: var(--content-padding);
+        }
     }
 
     &__text {

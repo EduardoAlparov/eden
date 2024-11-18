@@ -381,7 +381,7 @@
                             </ul>
                         </div>
         
-                        <div class="page-header__controls">
+                        <div class="page-header__controls page-header__controls--minus-ml">
                             <button type="button" class="page-header__search search">
                                 <svg class="icon">
                                     <use xlink:href="./img/sprite.svg#search"></use>
@@ -417,47 +417,43 @@
         <main class="page-main">
 
 <section class="section hero js-hero-scroll-trigger">
-    <div class="hero__back hero__back--animated">
-        <picture>
-            <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-back-m.webp" />
-            <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-back.webp" />
-            <source media="(max-aspect-ratio: 4/3)" srcset="./img/hero-back-m.png" />
-            <img class="lazy" src="./img/hero-back.png" alt="hero back">
-        </picture>
-    </div>
-
     <div class="hero__scrolling-element hero__scrolling-element--animated">
+        <div class="hero__back hero__back--animated">
+            <picture>
+                <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-back-m.webp" />
+                <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-back.webp" />
+                <source media="(max-aspect-ratio: 4/3)" srcset="./img/hero-back-m.png" />
+                <img class="lazy" src="./img/hero-back.png" alt="hero back">
+            </picture>
+        </div>
+
         <div class="hero__inner hero__inner--animated js-hero-scroll-trigger-2">
             <h1 class="hero__title">
                 Your Union Blessed and Protected by Nature 
             </h1>
 
-            <div class="hero__second-block">
-                <div class="hero__site-container">
-                    <p class="hero__text">
-                        Capture your story in a ring created by the power of mighty and all-accepting love
-                    </p>
+            <div class="hero__second-block hero__site-container">
+                <p class="hero__text">
+                    Capture your story in a ring created by the power of mighty and all-accepting love
+                </p>
 
-                    <div class="hero__image hero__image--aspect">
-                        <picture>
-                            <source media="(max-aspect-ratio: 4/3)" type="image/webp"
-                                srcset="./img/hero-image-m.webp" />
-                            <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-image.webp" />
-                            <source media="(max-aspect-ratio: 4/3)" srcset="./img/hero-image-m.png" />
-                            <img class="lazy" src="./img/hero-image.png" alt="hero image">
-                        </picture>
-                    </div>
-
-                    <a href="#" class="hero__link button">
-                        <span>
-                            Start your journey here
-                        </span>
-                        <svg class="icon">
-                            <use xlink:href="./img/sprite.svg#border"></use>
-                        </svg>
-                    </a>
-
+                <div class="hero__image hero__image--aspect">
+                    <picture>
+                        <source media="(max-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-image-m.webp" />
+                        <source media="(min-aspect-ratio: 4/3)" type="image/webp" srcset="./img/hero-image.webp" />
+                        <source media="(max-aspect-ratio: 4/3)" srcset="./img/hero-image-m.png" />
+                        <img class="lazy" src="./img/hero-image.png" alt="hero image">
+                    </picture>
                 </div>
+
+                <a href="#" class="hero__link button js-image-scroll-trigger">
+                    <span>
+                        Start your journey here
+                    </span>
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#border"></use>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
@@ -889,10 +885,10 @@
 
     <div class="certification__decore">
         <picture>
-            <source media="(max-width: (1200px))" type="image/webp" srcset="./img/certification/decore-m.webp" />
-            <source media="(min-width: (1200px))" type="image/webp" srcset="./img/certification/decore.webp" />
-            <source media="(max-width: (1200px))" srcset="./img/certification/decore-m.png" />
-            <img class="lazy" src="./img/certification/decore.png" alt="">
+            <source media="(max-width: 1200px)" type="image/webp" srcset="./img/certification/decore-m.webp" />
+            <source media="(min-width: 1200px)" type="image/webp" srcset="./img/certification/decore.webp" />
+            <source media="(max-width: 1200px)" srcset="./img/certification/decore-m.png" />
+            <img class="lazy" media="(min-width: 1200px)" src="./img/certification/decore.png" alt="">
         </picture>
     </div>
 </section>
